@@ -1,26 +1,29 @@
+import { useState} from 'react';
+
 const Home = () => {
 
-// e is our even object!  
-	const handleClick = (e) => {
-		console.log('Hello Ninjas!', e );
+//let name = 'mario';
+
+
+// Here we use useState hook in order to get reactive values which change after click event.
+
+const [name, setName] = useState('mario');
+const [age, setAge] = useState(25);
+
+// e is the event object!  
+	const handleClick = () => {
+		setName('luigi');
+		setAge(30);
 	}
 
-	const handleClickAgain = (name, e) =>  {
-		console.log('hello' + name, e.target);
-	}
-
-
-
-
+		
     return (
 	<div className="home">
 	<h2> Homepage </h2>
+	<p> {name} is {age} years old </p> 
 	<button onClick={handleClick}>Click Me </button>
-	<button onClick={(e) => handleClickAgain('mario', e)}>Click Me </button>
+
 	</div>
-
-
-
       );
 }
  
