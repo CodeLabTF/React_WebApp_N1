@@ -1,4 +1,4 @@
-React Web app in development.  This app was made by following guides made by Net Ninja channel on Youtube.
+React Web app in development.  This app was created by following guides on Net Ninja Youtube channel.
 
 Desciption
 ...
